@@ -13,9 +13,9 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote: Quote;
   constructor() {}
 
-  addUpVotes() {
-    this.quote.upvote += 1;
-  }
+  // addUpVotes() {
+  //   this.quote.upvote += 1;
+  // }
 
   addDownVotes() {
     this.quote.downvote += 1;
