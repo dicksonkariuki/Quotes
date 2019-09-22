@@ -1,22 +1,22 @@
-<p>Quote origin by {{quote.author}}</p>
-<p>Quote submitted by {{quote.submitter}} </p>
-<p>submitted {{quote.submitTime|timeCount}} hours ago</p>
+<p>Author {{quote.author}}</p>
+<p>submitted by {{quote.submitter}} </p>
+<p>This quote was submitted on {{quote.completeDate|timeCount}} </p>
 <div class="row">
-
-    <div class="col-6">
+    <div class="col- md-4">
 
         <p>
-            <button class="btn btn-sm btn-success" on-click='addUpVotes()'>Upvotes{{quote.upvote}}</button>
+            <button class="btn btn- btn-primary" on-click='addUpVotes()'>Upvotes {{quote.upvote}}</button>
         </p>
 
     </div>
 
-    <div class="col-6">
+    <div class="col-md-4">
 
         <p>
-            <button class="btn btn-sm btn-danger" (click)='addDownVotes()'>Downvotes{{quote.downvote}}</button>
+            <button class="btn btn- btn-primary" (click)='addDownVotes()'>Downvotes {{quote.downvote}}</button>
         </p>
 
     </div>
+    <button (click)='quoteDelete(true)' class="btn btn-outline-success">Delete Quote</button>
 
 </div>
