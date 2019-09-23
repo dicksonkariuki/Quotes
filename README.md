@@ -2,26 +2,38 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This web application allows a user to input their desired quote,author, and submitter after which others can rate the quote.
 
-## Code scaffolding
+## live Link
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Set up instructions
 
-## Build
+Install angular CLI to run angular applications.
+clone the repository from https://github.com/dicksonkariuki/Quotes.git.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies used
 
-## Running unit tests
+Angular 7.
+HTML.
+CSS.
+Bootstrap.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Known bugs.
 
-## Running end-to-end tests
+The app cannot highlight the quote with the highest upvotes.
+The app cannot delete a quote.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Contact information
 
-## Further help
+For more information contact the developer through this email:dicksonkariuki4@gmail.com.
+Also any helpful feedback on how to improve the app is welcome.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### LICENCE
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sub-license, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Copyright (c) 2019.
