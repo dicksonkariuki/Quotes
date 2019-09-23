@@ -26,7 +26,7 @@
 <p>submitted {{quote.submitTime|timeCount}} hours ago</p>
 <div class="row">
 
-    <div class="col-6">
+    <div class="col-md-4">
 
         <p>
             <button class="btn btn-sm btn-success" on-click='addUpVotes()'>upvote {{quote.upvote}}</button>
@@ -34,7 +34,7 @@
 
     </div>
 
-    <div class="col-6">
+    <div class="col-md-4">
 
         <p>
             <button class="btn btn-sm btn-danger" (click)='addDownVotes()'>downvote {{quote.downvote}}</button>
