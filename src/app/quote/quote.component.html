@@ -2,6 +2,7 @@
 
     <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
 
+
 </div>
 
 
@@ -12,9 +13,13 @@
 
         <li>{{quote.quote}}</li>
 
-        <button class="btn btn-primary" (click)='toogleDetails(i)'>show details</button>
 
-        <app-quote-details *ngIf='quote.showAuthor' [quote]='quote'></app-quote-details>
+        <button class="btn btn-danger" (click)='toogleDetails(i)'>Quote details</button>
+        <div *ngIf='quote.showAuthor'>
+            <app-quote-details [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
+        </div>
+
+
 
     </div>
 </ol>
