@@ -6,7 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This web application allows a user to input their desired quote,author, and submitter after which others can rate the quote.
 
+## Behavior driven development
+
+| behaviour| input | Output |
+
+| The app allows user to input quote and display the quote and its details| Quote,author,submitter| Displays the quote and quote details upon toggling|
+
 ## live Link
+
+You can view the app via:https://github.com/dicksonkariuki/Quotes
 
 ## Set up instructions
 
@@ -15,15 +23,14 @@ clone the repository from https://github.com/dicksonkariuki/Quotes.git.
 
 ## Technologies used
 
-Angular 7.
-HTML.
-CSS.
-Bootstrap.
+1.Angular 7
+2.HTML.
+3.CSS.
+4.Bootstrap.
 
 ## Known bugs.
 
 The app cannot highlight the quote with the highest upvotes.
-The app cannot delete a quote.
 
 ## Contact information
 
