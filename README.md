@@ -8,9 +8,9 @@ This web application allows a user to input their desired quote,author, and subm
 
 ## Behavior driven development
 
-| behaviour| input | Output |
-
-| The app allows user to input quote and display the quote and its details| Quote,author,submitter| Displays the quote and quote details upon toggling|
+| Behavior                                                                 |         Input          |                                             Output |
+| ------------------------------------------------------------------------ | :--------------------: | -------------------------------------------------: |
+| The app allows user to input quote and display the quote and its details | Quote,author,submitter | Displays the quote and quote details upon toggling |
 
 ## live Link
 
