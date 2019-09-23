@@ -16,7 +16,7 @@
 
         <button class="btn btn-danger" (click)='toogleDetails(i)'>Quote details</button>
         <div *ngIf='quote.showAuthor'>
-            <app-quote-details [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
+            <app-quote-details [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quote-details>
         </div>
 
 
