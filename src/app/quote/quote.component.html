@@ -1,26 +1,20 @@
-<div class="container-fluid">
-    <div class="column-md-12"></div>
+<div class="jumbotron">
+
+    <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+
 </div>
-<div class="container">
-    <ul>
-
-        <div *ngFor='let quote of quotes;let i = index'>
-            <div class="tabs">
-                <div class="row">
-                    <div class="col-md-0">
-                    </div>
-
-                    <div class="col-md-12">
-                        <li id="{{i}}">{{quote.name}}</li>
-                        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-                        <button class="btn btn-primary" (click)='upVote()'> upVote <span>{{upVotes}}</span></button>
-                        <button class="btn btn-primary" (click)='downVote()'> downVote
-                            <span>{{downVotes}}</span></button>
 
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </ul>
-</div>
+
+<ol>
+
+    <div *ngFor='let quote of quote ; let i= index'>
+
+        <li>{{quote.quote}}</li>
+
+        <button class="btn btn-primary" (click)='toogleDetails(i)'>show details</button>
+
+        <app-quote-details *ngIf='quote.showAuthor' [quote]='quote'></app-quote-details>
+
+    </div>
+</ol>
