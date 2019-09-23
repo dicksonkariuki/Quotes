@@ -11,7 +11,9 @@
 
     <div *ngFor='let quote of quote ; let i= index'>
 
-        <li>{{quote.quote}}</li>
+        <!-- <li appHighlight>{{quote.quote}}</li> -->
+        <p appHighlight *ngIf="loopVote()===quote.upvote && quote.upvote>0"> {{quote.quote}} </p>
+        <p *ngIf="loopVote()!==quote.upvote || quote.upvote===0">{{quote.quote}}</p>
 
 
         <button class="btn btn-danger" (click)='toogleDetails(i)'>Quote details</button>
