@@ -1,32 +1,10 @@
-<!-- <p>Author {{quote.author}}</p>
-<p>submitted by {{quote.submitter}} </p>
-<button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
-<p>This quote was submitted {{quote.completeDate|timeCount}} days ago </p>
-<div class="row">
-    <div class="col- md-4">
-
-        <p>
-            <button class="btn btn- btn-primary" on-click='addUpVotes()'>Upvotes {{quote.upvote}}</button>
-        </p>
-
-    </div>
-
-    <div class="col-md-4">
-
-        <p>
-            <button class="btn btn- btn-primary" (click)='addDownVotes()'>Downvotes {{quote.downvote}}</button>
-        </p>
-
-    </div>
-
-
-</div> -->
 <p>Author {{quote.author}}</p>
+<button (click)='quoteDelete(true)' class="btn btn-primary">Delete Quote</button>
 <p>submitted by {{quote.submitter}} </p>
 <p>submitted {{quote.submitTime|timeCount}} hours ago</p>
 <div class="row">
 
-    <div class="col-md-4">
+    <div class="col-md-3">
 
         <p>
             <button class="btn btn-primary" on-click='addUpVotes()'>upvote {{quote.upvote}}</button>
@@ -34,7 +12,7 @@
 
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
 
         <p>
             <button class="btn  btn-primary" (click)='addDownVotes()'>downvote {{quote.downvote}}</button>
