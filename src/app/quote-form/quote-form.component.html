@@ -1,20 +1,20 @@
 <div class='container-fluid'>
     <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
         <div class="form-group">
-            <label for="quote">Quote</label><br>
-            <textarea class="form-control" rows="8" id="quote" [(ngModel)]='newQuote.quote' name="quote"
-                #quote="ngModel" required></textarea>
+            <label for="quote" class="text-white">Quote</label><br>
+            <textarea class="form-control bg-transparent text-white" rows="8" id="quote" [(ngModel)]='newQuote.quote'
+                name="quote" #quote="ngModel" required></textarea>
         </div>
         <div class="form-group">
-            <label for="author">Author</label>
-            <input type="text" class="form-control" [(ngModel)]='newQuote.author' name='author' #author='ngModel'
-                required>
+            <label for="author" class="text-white">Author</label>
+            <input type="text" class="form-control bg-transparent text-white" [(ngModel)]='newQuote.author'
+                name='author' #author='ngModel' required>
         </div>
 
         <div class="form-group">
-            <label for="submitter">Submitted by</label>
-            <input type="text" class="form-control" [(ngModel)]='newQuote.submitter' name="submitter"
-                #submitter='ngModel' required>
+            <label for="submitter" class="text-white">Submitted by</label>
+            <input type="text" class="form-control bg-transparent text-white" [(ngModel)]='newQuote.submitter'
+                name="submitter" #submitter='ngModel' required>
 
         </div>
 
@@ -26,6 +26,6 @@
 
         </div> -->
 
-        <button type="Submit" on-click="publishQuote()" class="btn btn-success btn-lg">Submit</button>
+        <button type="Submit" on-click="publishQuote()" class="btn btn-primary btn-lg">Submit</button>
     </form>
 </div>
